@@ -1,0 +1,149 @@
+{% if messages %}
+{% for i in messages %}
+<script>alert("{{ i }}");</script>
+{% endfor %}
+{% endif %}
+
+<div class="header section">
+
+        <!-- Header Top Start -->
+        <div class="header-top bg-light">
+            <div class="container">
+                <div class="row row-cols-xl-2 align-items-center">
+
+                    <!-- Header Top Language, Currency & Link Start -->
+                    <div class="col d-none d-lg-block">
+                        <div class="header-top-lan-curr-link">
+                            <div class="header-top-lan dropdown">
+
+                            </div>
+                            <div class="header-top-curr dropdown">
+
+                            </div>
+                            <div class="header-top-links">
+                                <a href="#"> Choose your festive look</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Header Top Language, Currency & Link End -->
+
+                    <!-- Header Top Message Start -->
+                    <div class="col-md-6">
+                        <p class="header-top-message">Get your festive look<a href="/">Shop Now</a></p>
+                    </div>
+                    <!-- Header Top Message End -->
+
+                </div>
+            </div>
+        </div>
+<div class="header-bottom">
+            <div class="header-sticky">
+                <div class="container">
+                    <div class="row align-items-center">
+
+                        <!-- Header Logo Start -->
+                        <div class="col-xl-2 col-6">
+                            <div class="header-logo">
+                                <a href="/"><img src="/static/assets/images/logo/logo2.png" alt="Site Logo" height="100px" /></a>
+                            </div>
+                        </div>
+                        <!-- Header Logo End -->
+
+                        <!-- Header Menu Start -->
+                        <div class="col-xl-8 d-none d-xl-block">
+                            <div class="main-menu position-relative">
+                                <ul>
+                                    <li><a href="/"> <span>Home</span></a></li>
+                                     <li><a href="/about"> <span>About</span></a></li>
+
+                                        <li class="has-children">
+                                            <a href="#"><span>Men</span> <i class="fa fa-angle-down"></i></a>
+                                            <ul class="sub-menu">
+                                                {% for i in categories %}
+                                                <li><a href="/mencat/{{ i.id }}">{{ i.catname }}</a></li>
+                                                {% endfor %}
+                                            </ul>
+                                        </li>
+                                     <li class="has-children">
+                                            <a href="#"><span>Women</span> <i class="fa fa-angle-down"></i></a>
+                                            <ul class="sub-menu">
+                                                {% for i in categories %}
+                                                <li><a href="/womencat/{{ i.id }}">{{ i.catname }}</a></li>
+                                                {% endfor %}
+                                            </ul>
+                                        </li>
+                                     <li class="has-children">
+                                            <a href="#"><span>Kids</span> <i class="fa fa-angle-down"></i></a>
+                                            <ul class="sub-menu">
+                                                {% for i in categories %}
+                                                <li><a href="/kidcat/{{ i.id }}">{{ i.catname }}</a></li>
+                                                {% endfor %}
+                                            </ul>
+                                        </li>
+
+                                    <!-- <li class="has-children">
+                                        <a href="#"><span>Blog</span> <i class="fa fa-angle-down"></i></a>
+                                        <ul class="sub-menu">
+                                            <li><a href="blog.html">Blog</a></li>
+                                            <li><a href="blog-left-sidebar.html">Blog Left Sidebar</a></li>
+                                            <li><a href="blog-right-sidebar.html">Blog Right Sidebar</a></li>
+                                            <li><a href="blog-details.html">Blog Details</a></li>
+                                            <li><a href="blog-details-sidebar.html">Blog Details Sidebar</a></li>
+                                        </ul>
+                                    </li> -->
+                                    <li><a href="/contact"> <span>Contact</span></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- Header Menu End -->
+
+                        <!-- Header Action Start -->
+                        <div class="col-xl-2 col-6">
+                            <div class="header-actions">
+                                {% if request.session.log_firstname %}
+                                <!-- Search Header Action Button Start -->
+                                <a href="javascript:void(0)" class="header-action-btn header-action-btn-search"><i class="pe-7s-search"></i></a>
+                                <!-- Search Header Action Button End -->
+
+                                <!-- User Account Header Action Button Start -->
+                                <a href="/logout" class="header-action-btn d-none d-md-block"><i class="pe-7s-user"></i></a>
+                                <!-- User Account Header Action Button End -->
+
+                                <!-- Wishlist Header Action Button Start -->
+                                <a href="/wishlist" class="header-action-btn header-action-btn-wishlist d-none d-md-block">
+                                    <i class="pe-7s-like"></i>
+                                </a>
+                                <!-- Wishlist Header Action Button End -->
+
+                                <!-- Shopping Cart Header Action Button Start -->
+                                <a href="/cart" class="header-action-btn header-action-btn-cart">
+                                    <i class="pe-7s-cart"></i>
+<!--                                    <span class="header-action-num">3</span>-->
+                                </a>
+                                <!-- Shopping Cart Header Action Button End -->
+
+                                <!-- Mobile Menu Hambarger Action Button Start -->
+                                <a href="javascript:void(0)" class="header-action-btn header-action-btn-menu d-xl-none d-lg-block">
+                                    <i class="fa fa-bars"></i>
+                                </a>
+
+                                <div class="user-info ms-3">
+                                    <span class="text-dark">{{ request.session.log_firstname }}</span>
+                                        <a href="/userorder" class="header-action-btn header-action-btn-cart">
+                                    <i class="pe-7s-shopbag"></i>
+                                </a>
+                                </div>
+                                {% else %}
+                                <a class="btn btn-outline-dark me-2" href="/login">login</a>
+<!--                                <a class="btn btn-outline-light me-2" href="/register">Sign Up</a>-->
+                                {% endif %}
+
+                                <!-- Mobile Menu Hambarger Action Button End -->
+                            </div>
+                        </div>
+                        <!-- Header Action End -->
+
+                    </div>
+                </div>
+            </div>
+        </div>

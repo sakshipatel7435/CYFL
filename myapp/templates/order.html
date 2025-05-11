@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<!-- Mirrored from htmldemo.net/destry/destry/cart.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 20 Aug 2024 10:10:59 GMT -->
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Destry - Fashion eCommerce HTML Template</title>
+    <!-- Favicons -->
+    <link rel="shortcut icon" href="/static/assets/images/favicon.ico">
+
+    <!-- Vendor CSS (Icon Font) -->
+
+    <link rel="stylesheet" href="/static/assets/css/vendor/fontawesome.min.css">
+    <link rel="stylesheet" href="/static/assets/css/vendor/pe-icon-7-stroke.min.css">
+
+
+    <!-- Plugins CSS (All Plugins Files) -->
+
+    <link rel="stylesheet" href="/static/assets/css/plugins/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="/static/assets/css/plugins/animate.min.css" />
+    <link rel="stylesheet" href="/static/assets/css/plugins/aos.min.css" />
+    <link rel="stylesheet" href="/static/assets/css/plugins/nice-select.min.css" />
+    <link rel="stylesheet" href="/static/assets/css/plugins/jquery-ui.min.css" />
+    <link rel="stylesheet" href="/static/assets/css/plugins/lightgallery.min.css" />
+
+
+    <!-- Main Style CSS -->
+
+
+    <link rel="stylesheet" href="/static/assets/css/style.css" />
+</head>
+
+<body>
+    <div class="header section">
+
+        <!-- Header Top Start -->
+      {% include "nav.html" %}
+        <!-- Header Bottom End -->
+
+        <!-- Mobile Menu Start -->
+        <div class="mobile-menu-wrapper">
+            <div class="offcanvas-overlay"></div>
+
+            <!-- Mobile Menu Inner Start -->
+            <div class="mobile-menu-inner">
+
+                <!-- Button Close Start -->
+                <div class="offcanvas-btn-close">
+                    <i class="pe-7s-close"></i>
+                </div>
+                <!-- Button Close End -->
+
+                <!-- Mobile Menu Start -->
+                <div class="mobile-navigation">
+                    <nav>
+                        <ul class="mobile-menu">
+                            <li class="has-children">
+                                <a href="#">Home <i class="fa fa-angle-down"></i></a>
+                                <ul class="dropdown">
+                                    <li><a href="/">Home One</a></li>
+                                    <li><a href="index-2.html">Home Two</a></li>
+                                </ul>
+                            </li>
+                            <li class="has-children">
+                                <a href="#">Shop <i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                                <ul class="dropdown">
+                                    <li><a href="shop-grid">Shop Grid</a></li>
+                                    <li><a href="shop-left-sidebar">Shop Left Sidebar</a></li>
+                                    <li><a href="shop-right-sidebar.html">Shop Right Sidebar</a></li>
+                                    <li><a href="shop-list-fullwidth.html">Shop List Fullwidth</a></li>
+                                    <li><a href="shop-list-left-sidebar.html">Shop List Left Sidebar</a></li>
+                                    <li><a href="shop-list-right-sidebar.html">Shop List Right Sidebar</a></li>
+                                    <li><a href="wishlist">Wishlist</a></li>
+                                    <li><a href="cart">Shopping Cart</a></li>
+                                    <li><a href="checkout">Checkout</a></li>
+                                    <li><a href="compare.html">Compare</a></li>
+                                </ul>
+                            </li>
+                            <li class="has-children">
+                                <a href="#">Product <i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                                <ul class="dropdown">
+                                    <li><a href="single-product">Single Product</a></li>
+                                    <li><a href="single-product-sale.html">Single Product Sale</a></li>
+                                    <li><a href="single-product-group.html">Single Product Group</a></li>
+                                    <li><a href="single-product-normal.html">Single Product Normal</a></li>
+                                    <li><a href="single-product-affiliate.html">Single Product Affiliate</a></li>
+                                    <li><a href="single-product-slider.html">Single Product Slider</a></li>
+                                    <li><a href="single-product-gallery-left.html">Gallery Left</a></li>
+                                    <li><a href="single-product-gallery-right.html">Gallery Right</a></li>
+                                    <li><a href="single-product-tab-style-left.html">Tab Style Left</a></li>
+                                    <li><a href="single-product-tab-style-right.html">Tab Style Right</a></li>
+                                    <li><a href="single-product-sticky-left.html">Sticky Left</a></li>
+                                    <li><a href="single-product-sticky-right.html">Sticky Right</a></li>
+                                </ul>
+                            </li>
+                            <li class="has-children">
+                                <a href="#">Pages <i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                                <ul class="dropdown">
+                                    <li><a href="about.html">About Us</a></li>
+                                    <li><a href="contact.html">Contact</a></li>
+                                    <li><a href="faq.html">Faq</a></li>
+                                    <li><a href="404-error.html">Error 404</a></li>
+                                    <li><a href="my-account.html">My Account</a></li>
+                                    <li><a href="login-register.html">Loging | Register</a></li>
+                                </ul>
+                            </li>
+                            <li class="has-children">
+                                <a href="#">Blog <i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                                <ul class="dropdown">
+                                    <li><a href="blog.html">Blog</a></li>
+                                    <li><a href="blog-left-sidebar.html">Blog Left Sidebar</a></li>
+                                    <li><a href="blog-right-sidebar.html">Blog Right Sidebar</a></li>
+                                    <li><a href="blog-details.html">Blog Details</a></li>
+                                    <li><a href="blog-details-sidebar.html">Blog Details Sidebar</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <!-- Mobile Menu End -->
+
+                <!-- Language, Currency & Link Start -->
+                <div class="offcanvas-lag-curr mb-6">
+                    <h2 class="title">Languages</h2>
+                    <div class="header-top-lan-curr-link">
+                        <div class="header-top-lan dropdown">
+                            <button class="dropdown-toggle" data-bs-toggle="dropdown">English <i class="fa fa-angle-down"></i></button>
+                            <ul class="dropdown-menu dropdown-menu-right animate slideIndropdown">
+                                <li><a class="dropdown-item" href="#">English</a></li>
+                                <li><a class="dropdown-item" href="#">Japanese</a></li>
+                                <li><a class="dropdown-item" href="#">Arabic</a></li>
+                                <li><a class="dropdown-item" href="#">Romanian</a></li>
+                            </ul>
+                        </div>
+                        <div class="header-top-curr dropdown">
+                            <button class="dropdown-toggle" data-bs-toggle="dropdown">USD <i class="fa fa-angle-down"></i></button>
+                            <ul class="dropdown-menu dropdown-menu-right animate slideIndropdown">
+                                <li><a class="dropdown-item" href="#">USD</a></li>
+                                <li><a class="dropdown-item" href="#">Pound</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- Language, Currency & Link End -->
+
+                <!-- Contact Links/Social Links Start -->
+                <div class="mt-auto">
+
+                    <!-- Contact Links Start -->
+                    <ul class="contact-links">
+                        <li><i class="fa fa-phone"></i><a href="#"> +012 3456 789 123</a></li>
+                        <li><i class="fa fa-envelope-o"></i><a href="#"> info@example.com</a></li>
+                        <li><i class="fa fa-clock-o"></i> <span>Monday - Sunday 9.00 - 18.00</span> </li>
+                    </ul>
+                    <!-- Contact Links End -->
+
+                    <!-- Social Widget Start -->
+                    <div class="widget-social">
+                        <a title="Facebook" href="#"><i class="fa fa-facebook-f"></i></a>
+                        <a title="Twitter" href="#"><i class="fa fa-twitter"></i></a>
+                        <a title="Linkedin" href="#"><i class="fa fa-linkedin"></i></a>
+                        <a title="Youtube" href="#"><i class="fa fa-youtube"></i></a>
+                        <a title="Vimeo" href="#"><i class="fa fa-vimeo"></i></a>
+                    </div>
+                    <!-- Social Widget Ende -->
+                </div>
+                <!-- Contact Links/Social Links End -->
+            </div>
+            <!-- Mobile Menu Inner End -->
+        </div>
+        <!-- Mobile Menu End -->
+
+        <!-- Offcanvas Search Start -->
+        <div class="offcanvas-search">
+            <div class="offcanvas-search-inner">
+
+                <!-- Button Close Start -->
+                <div class="offcanvas-btn-close">
+                    <i class="pe-7s-close"></i>
+                </div>
+                <!-- Button Close End -->
+
+                <!-- Offcanvas Search Form Start -->
+                <form class="offcanvas-search-form" action="#">
+                    <input type="text" placeholder="Search Here..." class="offcanvas-search-input">
+                </form>
+                <!-- Offcanvas Search Form End -->
+
+            </div>
+        </div>
+        <!-- Offcanvas Search End -->
+
+        <!-- Cart Offcanvas Start -->
+        <div class="cart-offcanvas-wrapper">
+            <div class="offcanvas-overlay"></div>
+
+            <!-- Cart Offcanvas Inner Start -->
+            <div class="cart-offcanvas-inner">
+
+                <!-- Button Close Start -->
+                <div class="offcanvas-btn-close">
+                    <i class="pe-7s-close"></i>
+                </div>
+                <!-- Button Close End -->
+
+                <!-- Offcanvas Cart Content Start -->
+                <div class="offcanvas-cart-content">
+                    <!-- Offcanvas Cart Title Start -->
+                    <h2 class="offcanvas-cart-title mb-10">My Orders</h2>
+                    <!-- Offcanvas Cart Title End -->
+
+                    <!-- Cart Product/Price Start -->
+                     {% for i in data %}
+                    <div class="cart-product-wrapper mb-6">
+
+                        <!-- Single Cart Product Start -->
+                        <div class="single-cart-product">
+                            <div class="cart-product-thumb">
+                                <a href="single-product"><img class="img-fluid" src="/media/{{ i.productid.pimage }}" alt="Product" /></a>
+                            </div>
+                            <div class="cart-product-content">
+                                <h3 class="title"><a href="single-product">{{ i.productid.name }}</a></h3>
+                                <span class="price">
+								<span class="new">{{ i.productid.price }}</span>
+                                <span class="old">$18.00</span>
+                                </span>
+                            </div>
+                        </div>
+
+                        <!-- Single Cart Product End -->
+
+                        <!-- Product Remove Start -->
+                        <div class="cart-product-remove">
+                            <a href="#"><i class="fa fa-trash"></i></a>
+                        </div>
+                        <!-- Product Remove End -->
+                    </div>
+                      {% endfor %}
+                    <!-- Cart Product/Price End -->
+
+<!--                    &lt;!&ndash; Cart Product/Price Start &ndash;&gt;-->
+<!--                    <div class="cart-product-wrapper mb-6">-->
+
+<!--                        &lt;!&ndash; Single Cart Product Start &ndash;&gt;-->
+<!--                        <div class="single-cart-product">-->
+<!--                            <div class="cart-product-thumb">-->
+<!--                                <a href="single-product.html"><img src="/static/assets/images/products/small-product/3.jpg" alt="Cart Product"></a>-->
+<!--                            </div>-->
+<!--                            <div class="cart-product-content">-->
+<!--                                <h3 class="title"><a href="single-product.html">Enjoy The Rest T-Shirt</a></h3>-->
+<!--                                <span class="price">-->
+<!--								<span class="new">$20.00</span>-->
+<!--                                <span class="old">$21.00</span>-->
+<!--                                </span>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                        &lt;!&ndash; Single Cart Product End &ndash;&gt;-->
+
+<!--                        &lt;!&ndash; Product Remove Start &ndash;&gt;-->
+<!--                        <div class="cart-product-remove">-->
+<!--                            <a href="#"><i class="fa fa-trash"></i></a>-->
+<!--                        </div>-->
+<!--                        &lt;!&ndash; Product Remove End &ndash;&gt;-->
+
+<!--                    </div>-->
+<!--                    &lt;!&ndash; Cart Product/Price End &ndash;&gt;-->
+
+<!--                    &lt;!&ndash; Cart Product Total Start &ndash;&gt;-->
+<!--                    <div class="cart-product-total">-->
+<!--                        <span class="value">Subtotal</span>-->
+<!--                        <span class="price">220$</span>-->
+<!--                    </div>-->
+<!--                    &lt;!&ndash; Cart Product Total End &ndash;&gt;-->
+
+<!--                    &lt;!&ndash; Cart Product Button Start &ndash;&gt;-->
+<!--                    <div class="cart-product-btn mt-4">-->
+<!--                        <a href="cart.html" class="btn btn-dark btn-hover-primary rounded-0 w-100">View cart</a>-->
+<!--                        <a href="checkout.html" class="btn btn-dark btn-hover-primary rounded-0 w-100 mt-4">Checkout</a>-->
+<!--                    </div>-->
+<!--                    &lt;!&ndash; Cart Product Button End &ndash;&gt;-->
+
+                </div>
+                <!-- Offcanvas Cart Content End -->
+
+            </div>
+            <!-- Cart Offcanvas Inner End -->
+        </div>
+        <!-- Cart Offcanvas End -->
+
+    </div>
+
+
+    <!-- Breadcrumb Section Start -->
+    <div class="section">
+
+        <!-- Breadcrumb Area Start -->
+        <div class="breadcrumb-area bg-light">
+            <div class="container-fluid">
+                <div class="breadcrumb-content text-center">
+                    <h1 class="title">My orders</h1>
+                    <ul>
+                        <li>
+                            <a href="/">Home </a>
+                        </li>
+                        <li class="active">My orders</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- Breadcrumb Area End -->
+
+    </div>
+    <!-- Breadcrumb Section End -->
+
+    <!-- Shopping Cart Section Start -->
+    <div class="section section-margin">
+        <div class="container">
+
+            <div class="row">
+                <div class="col-12">
+
+                    <!-- Cart Table Start -->
+                    <div class="cart-table table-responsive">
+                        <table class="table table-bordered">
+
+                            <!-- Table Head Start -->
+                            <thead>
+                                <tr>
+                                    <th>Order ID</th>
+                                    <th class="pro-title">Total</th>
+                                    <th class="pro-price">TimeStamp</th>
+                                    <th class="pro-quantity">PayMode</th>
+                                    <th class="pro-subtotal">View</th>
+                                    <th class="pro-subtotal">Actions</th>
+                                </tr>
+                            </thead>
+                            <!-- Table Head End -->
+
+                            <!-- Table Body Start -->
+                            <tbody>
+                            {% for i in data %}
+                                <tr>
+                                     <td>{{ forloop.counter }}</td>
+                                    <td class="pro-title"><span>{{ i.finaltotal }}</span></td>
+                                    <td class="pro-price"><span>{{ i.timestamp }}</span></td>
+                                    <td class="pro-quantity">
+                                        <div class="quantity">
+                                            <div>
+                                                {{ i.paymode }}
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td class="pro-remove">
+                                        <a href="/yourorderdetails/{{ i.id }}" class="btn btn-sm btn-primary btn-action">View Order Detail</a>
+                                    </td>
+
+                                    <td class="pro-remove">
+                                        {%if i.status%}
+                                        <a href="/cancelorder/{{ i.id }}" class="btn btn-sm btn-primary btn-action">Cancel Order</a>
+                                        {%else%}
+                                        <a href="/cancelorder/{{ i.id }}" class="btn btn-sm btn-primary btn-action disabled "> Order Canceled</a>
+                                        {%endif%}
+                                    </td>
+
+                                </tr>
+<!--                                <tr>-->
+<!--                                    <td class="pro-thumbnail"><a href="#"><img class="img-fluid" src="/static/assets/images/products/small-product/2.jpg" alt="Product" /></a></td>-->
+<!--                                    <td class="pro-title"><a href="#">Basic Jogging Shorts <br> Blue</a></td>-->
+<!--                                    <td class="pro-price"><span>$75.00</span></td>-->
+<!--                                    <td class="pro-quantity">-->
+<!--                                        <div class="quantity">-->
+<!--                                            <div class="cart-plus-minus">-->
+<!--                                                <input class="cart-plus-minus-box" value="0" type="text">-->
+<!--                                                <div class="dec qtybutton">-</div>-->
+<!--                                                <div class="inc qtybutton">+</div>-->
+<!--                                                <div class="dec qtybutton"><i class="fa fa-minus"></i></div>-->
+<!--                                                <div class="inc qtybutton"><i class="fa fa-plus"></i></div>-->
+<!--                                            </div>-->
+<!--                                        </div>-->
+<!--                                    </td>-->
+<!--                                    <td class="pro-subtotal"><span>$75.00</span></td>-->
+<!--                                    <td class="pro-remove"><a href="#"><i class="pe-7s-trash"></i></a></td>-->
+<!--                                </tr>-->
+<!--                                <tr>-->
+<!--                                    <td class="pro-thumbnail"><a href="#"><img class="img-fluid" src="/static/assets/images/products/small-product/10.jpg" alt="Product" /></a></td>-->
+<!--                                    <td class="pro-title"><a href="#">Lust For Life <br> Bulk/S</a></td>-->
+<!--                                    <td class="pro-price"><span>$295.00</span></td>-->
+<!--                                    <td class="pro-quantity">-->
+<!--                                        <div class="quantity">-->
+<!--                                            <div class="cart-plus-minus">-->
+<!--                                                <input class="cart-plus-minus-box" value="0" type="text">-->
+<!--                                                <div class="dec qtybutton">-</div>-->
+<!--                                                <div class="inc qtybutton">+</div>-->
+<!--                                                <div class="dec qtybutton"><i class="fa fa-minus"></i></div>-->
+<!--                                                <div class="inc qtybutton"><i class="fa fa-plus"></i></div>-->
+<!--                                            </div>-->
+<!--                                        </div>-->
+<!--                                    </td>-->
+<!--                                    <td class="pro-subtotal"><span>$295.00</span></td>-->
+<!--                                    <td class="pro-remove"><a href="#"><i class="pe-7s-trash"></i></a></td>-->
+<!--                                </tr>-->
+<!--                                <tr>-->
+<!--                                    <td class="pro-thumbnail"><a href="#"><img class="img-fluid" src="/static/assets/images/products/small-product/4.jpg" alt="Product" /></a></td>-->
+<!--                                    <td class="pro-title"><a href="#">Simple Woven Fabrics</a></td>-->
+<!--                                    <td class="pro-price"><span>$60.00</span></td>-->
+<!--                                    <td class="pro-quantity">-->
+<!--                                        <div class="quantity">-->
+<!--                                            <div class="cart-plus-minus">-->
+<!--                                                <input class="cart-plus-minus-box" value="2" type="text">-->
+<!--                                                <div class="dec qtybutton">-</div>-->
+<!--                                                <div class="inc qtybutton">+</div>-->
+<!--                                                <div class="dec qtybutton"><i class="fa fa-minus"></i></div>-->
+<!--                                                <div class="inc qtybutton"><i class="fa fa-plus"></i></div>-->
+<!--                                            </div>-->
+<!--                                        </div>-->
+<!--                                    </td>-->
+<!--                                    <td class="pro-subtotal"><span>$110.00</span></td>-->
+<!--                                    <td class="pro-remove"><a href="#"><i class="pe-7s-trash"></i></a></td>-->
+<!--                                </tr>-->
+                            {% endfor %}
+                            </tbody>
+                            <!-- Table Body End -->
+
+                        </table>
+                    </div>
+                    <!-- Cart Table End -->
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Shopping Cart Section End -->
+
+    <!-- Footer Section Start -->
+    <footer class="section footer-section">
+        <!-- Footer Top Start -->
+        <div class="footer-top section-padding">
+            <div class="container">
+                <div class="row mb-n10">
+                    <div class="col-12 col-sm-6 col-lg-4 col-xl-4 mb-10" data-aos="fade-up" data-aos-delay="200">
+                        <div class="single-footer-widget">
+                            <h2 class="widget-title">Contact Us</h2>
+                            <p class="desc-content">Lorem ipsum dolor sit amet, consectetur adipisicing sed do eiusmod tempor incididun</p>
+                            <!-- Contact Address Start -->
+                            <ul class="widget-address">
+                                <li><span>Address: </span> 123 Main Street, Anytown, CA 12345 - USA.</li>
+                                <li><span>Call to: </span> <a href="#"> (012) 800 456 789-987</a></li>
+                                <li><span>Mail to: </span> <a href="#"> yourmail@example.com</a></li>
+                            </ul>
+                            <!-- Contact Address End -->
+
+                            <!-- Soclial Link Start -->
+                            <div class="widget-social justify-content-start mt-4">
+                                <a title="Facebook" href="#"><i class="fa fa-facebook-f"></i></a>
+                                <a title="Twitter" href="#"><i class="fa fa-twitter"></i></a>
+                                <a title="Linkedin" href="#"><i class="fa fa-linkedin"></i></a>
+                                <a title="Youtube" href="#"><i class="fa fa-youtube"></i></a>
+                                <a title="Vimeo" href="#"><i class="fa fa-vimeo"></i></a>
+                            </div>
+                            <!-- Social Link End -->
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-2 col-xl-2 mb-10" data-aos="fade-up" data-aos-delay="300">
+                        <div class="single-footer-widget">
+                            <h2 class="widget-title">Information</h2>
+                            <ul class="widget-list">
+                                <li><a href="about.html">About Us</a></li>
+                                <li><a href="about.html">Delivery Information</a></li>
+                                <li><a href="about.html">Privacy Policy</a></li>
+                                <li><a href="about.html">Terms & Conditions</a></li>
+                                <li><a href="about.html">Customer Service</a></li>
+                                <li><a href="about.html">Return Policy</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-2 col-xl-2 mb-10" data-aos="fade-up" data-aos-delay="400">
+                        <div class="single-footer-widget aos-init aos-animate">
+                            <h2 class="widget-title">My Account</h2>
+                            <ul class="widget-list">
+                                <li><a href="account.html">My Account</a></li>
+                                <li><a href="wishlist.html">Wishlist</a></li>
+                                <li><a href="contact.html">Newsletter</a></li>
+                                <li><a href="contact.html">Help Center</a></li>
+                                <li><a href="contact.html">Conditin</a></li>
+                                <li><a href="contact.html">Term Of Use</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-4 col-xl-4 mb-10" data-aos="fade-up" data-aos-delay="500">
+                        <div class="single-footer-widget">
+                            <h2 class="widget-title">Newsletter</h2>
+                            <div class="widget-body">
+                                <p class="desc-content mb-0">Get E-mail updates about our latest shop and special offers.</p>
+
+                                <!-- Newsletter Form Start -->
+                                <div class="newsletter-form-wrap pt-4">
+                                    <form id="mc-form" class="mc-form">
+                                        <input type="email" id="mc-email" class="form-control email-box mb-4" placeholder="Enter your email here.." name="EMAIL">
+                                        <button id="mc-submit" class="newsletter-btn btn btn-primary btn-hover-dark" type="submit">Subscribe</button>
+                                    </form>
+                                    <!-- mailchimp-alerts Start -->
+                                    <div class="mailchimp-alerts text-centre">
+                                        <div class="mailchimp-submitting"></div><!-- mailchimp-submitting end -->
+                                        <div class="mailchimp-success text-success"></div><!-- mailchimp-success end -->
+                                        <div class="mailchimp-error text-danger"></div><!-- mailchimp-error end -->
+                                    </div>
+                                    <!-- mailchimp-alerts end -->
+                                </div>
+                                <!-- Newsletter Form End -->
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer Top End -->
+
+        <!-- Footer Bottom Start -->
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-12 text-center">
+                        <div class="copyright-content">
+                            <p class="mb-0">© 2023 <strong>Destry </strong> Made width <i class="fa fa-heart text-danger"></i> by <a href="https://hasthemes.com/">HasThemes.</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer Bottom End -->
+    </footer>
+    <!-- Footer Section End -->
+
+    <!-- Scroll Top Start -->
+    <a href="#" class="scroll-top" id="scroll-top">
+        <i class="arrow-top fa fa-long-arrow-up"></i>
+        <i class="arrow-bottom fa fa-long-arrow-up"></i>
+    </a>
+    <!-- Scroll Top End -->
+
+    <!-- Scripts -->
+    <!-- Scripts -->
+    <!-- Global Vendor, plugins JS -->
+
+    <!-- Vendors JS -->
+
+
+    <script src="/static/assets/js/vendor/bootstrap.bundle.min.js"></script>
+    <script src="/static/assets/js/vendor/jquery-3.6.0.min.js"></script>
+    <script src="/static/assets/js/vendor/jquery-migrate-3.3.2.min.js"></script>
+    <script src="/static/assets/js/vendor/modernizr-3.11.2.min.js"></script>
+
+
+    <!-- Plugins JS -->
+
+
+    <script src="/static/assets/js/plugins/countdown.min.js"></script>
+    <script src="/static/assets/js/plugins/aos.min.js"></script>
+    <script src="/static/assets/js/plugins/swiper-bundle.min.js"></script>
+    <script src="/static/assets/js/plugins/nice-select.min.js"></script>
+    <script src="/static/assets/js/plugins/jquery.ajaxchimp.min.js"></script>
+    <script src="/static/assets/js/plugins/jquery-ui.min.js"></script>
+    <script src="/static/assets/js/plugins/lightgallery-all.min.js"></script>
+    <script src="/static/assets/js/plugins/thia-sticky-sidebar.min.js"></script>
+
+
+
+    <!--Main JS-->
+    <script src="/static/assets/js/main.js"></script>
+
+</body>
+
+
+<!-- Mirrored from htmldemo.net/destry/destry/cart.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 20 Aug 2024 10:10:59 GMT -->
+</html>
